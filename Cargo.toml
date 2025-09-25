@@ -6,6 +6,13 @@ edition = "2024"
 [build-dependencies]
 bindgen = "0.72.1"
 cmake = "0.1.54"
+cc = "1.0.79"
 
 [dependencies]
 libc = "0.2.176"
+
+[features]
+default = ["accelerate", "metal"]
+
+accelerate = []
+metal = []
